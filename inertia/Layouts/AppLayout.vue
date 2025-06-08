@@ -4,7 +4,7 @@
 
     <main class="flex-1 p-4">
       <div class="flex justify-between items-center mb-4">
-    
+
       </div>
 
       <slot />
@@ -12,10 +12,13 @@
   </div>
 </template>
 
-<script setup>
+<script lang="ts">
+import { defineComponent } from 'vue'
 import Sidebar from '@/Layouts/core/Sidebar.vue'
 
-
-
-
+export default defineComponent({
+  components: {
+    Sidebar,
+  },
+})
 </script>
